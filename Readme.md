@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Alsu Zaripova](https://up.htmlacademy.ru/htmlcss/33/user/1763659).
-* Наставник: `Владислав Ермолаев`.
+* Наставник: `Владислав Ермолаев`(https://htmlacademy.ru/profile/id128353).
 
 ---
 

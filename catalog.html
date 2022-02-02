@@ -5,7 +5,6 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
     <h1>Гостиницы Седоны</h1>
   <header class="page-header">
     <img scr="" alt="Лого гостиницы Седона">
@@ -25,8 +24,7 @@
         <li class="navigation-item">
             <a class="navigation-link" href="#">
                     <span class="visually-hidden">Поиск</span>
-            </a>
-                
+            </a>  
         </li>
         <li class="navigation-item">
             <a class="navigation-link" href="#">
@@ -43,30 +41,30 @@
       <section class="hero-inner">
           <h1>Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
-              <li>
+              <li class="breadcrumbs-item">
                   <a href="index.html">
                       <span class="visually-hidden">Главная</span>
                   </a>
               </li>
-              <li>
+              <li class="breadcrumbs-item">
                   <a>Каталог</a>
               </li>
           </ul>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
-              <legend>Инфраструктура:</legend>
-              <ul>
-                  <li>
+              <legend class="catalog-filter-title">Инфраструктура:</legend>
+              <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item">
                     <lable class="control">
                         <input class="control-input" type="checkbox" name="pool" checked>Бассейн
                     </lable>
                   </li>
-                  <li>
+                  <li class="catalog-filter-item">
                     <lable class="control">
                          <input class="control-input" type="checkbox" name="parking" checked>Парковка
                     </lable>
                   </li>
-                  <li>
+                  <li class="catalog-filter-item">
                     <lable class="control">
                          <input class="control-input" type="checkbox" name="wi-fi">Wi-Fi
                      </lable>
@@ -74,19 +72,19 @@
               </ul>
           </fieldset>
           <fieldset class="catalog-filter-group">
-            <legend>Тип жилья:</legend>
-            <ul>
-                <li>
+            <legend class="catalog-filter-title">Тип жилья:</legend>
+            <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
                   <lable class="control">
                       <input class="control-input" type="radio" name="accomodation-type" value="hotel" checked>Гостиница
                   </lable>
                 </li>
-                <li>
+                <li class="catalog-filter-item">
                   <lable class="control">
                        <input class="control-input" type="radio" name="accomodation-type" value="motel">Мотель
                   </lable>
                 </li>
-                <li>
+                <li class="catalog-filter-item">
                   <lable class="control">
                        <input class="control-input" type="radio" name="accomodation-type" value="apartments">Апартаменты
                    </lable>
@@ -99,11 +97,11 @@
             <input class="field" type="price" name="price" placeholder="от" id="price">
           </form>
           <button type="submit">Применить</button>
-          <button type="clear">Сбросить</button>
-        </form>
+          <button type="reset">Сбросить</button>
       </section>
       <section class="select-control">
           <h2>Найдено гостиниц:</h2>
+<!-- как вывести кол-во -->
           <select aria-label="Сортировка">
               <option value="cheap">Сначала дешёвые</option>
           </select>
@@ -112,14 +110,14 @@
           </a>
           <a href="#">
             <span class="visually-hidden">Показать по-одному</span>
-        </a>
-        <a href="#">
+          </a>
+          <a href="#">
             <span class="visually-hidden">Показать список</span>
-        </a>
+          </a>
       </section>
       <section class="products">
         <h2 class="visually-hidden">Карточки товаров</h2>
-        <ul> 
+        <ul class="products-list"> 
             <li class="product-card">
                 <a href="#">
                     <img src="" alt="">
@@ -128,7 +126,7 @@
                 <p>Гостиница</p>
                 <b>От 4000 ₽</b>
                 <a href="#">подробнее</a>
-                <a href="#">В избранное</a>
+                <button>В избранное</button>
                 <!-- рейтинг? -->
             </li>
             <li class="product-card">
@@ -139,7 +137,7 @@
                 <p>Гостиница</p>
                 <b>От 3000 ₽</b>
                 <a href="#">подробнее</a>
-                <a href="#">В избранное</a>
+                <button>В избранное</button>
                 <!-- рейтинг? -->
             </li>
             <li class="product-card">
@@ -150,7 +148,7 @@
                 <p>Гостиница</p>
                 <b>От 2000 ₽</b>
                 <a href="#">подробнее</a>
-                <a href="#">В избранное</a>
+                <button>В избранном</button>
                 <!-- рейтинг? -->
             </li>
             <li class="product-card">
@@ -161,7 +159,7 @@
                 <p>Гостиница</p>
                 <b>От 3000 ₽</b>
                 <a href="#">подробнее</a>
-                <a href="#">В избранное</a>
+                <button>В избранное</button>
                 <!-- рейтинг? -->
             </li>            
         </ul>
@@ -186,7 +184,7 @@
                 <a class="pagination-link" href="#">10</a>
             </li>
         </ul>
-        <select>
+        <select class="select-control">
             <p>Гостиниц на странице:</p>
             <option value="four">4</option>
         </select>
@@ -194,37 +192,37 @@
       <section class="newsletter">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="email-form" action="https://echo.htmlacademy.ru/" method="post">
-        <lable for="email" class="visually-hidden">Email</lable>
-        <input class="field" type="email" name="email" placeholder="Ваш e-mail" id="email">
-        <button class="email-button" type="submit">Подписаться</button>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+            <lable for="email" class="visually-hidden">Email</lable>
+            <input type="email" name="email" placeholder="Ваш e-mail" id="email">
+            <button type="submit">Подписаться</button>
         </form>
   </section>
 </main> 
 <footer class="page-footer">
-  <div class="container">
-    <ul class="social-list">
-        <li>
-            <a href="https://twitter.com/htmlacademy_ru">
-                <span class="visually-hidden">Твиттер</span>
-            </a>
-        </li> 
-        <li>
-            <a href="https://www.facebook.com/htmlacademy">
-                <span class="visually-hidden">Фейсбук</span>
-            </a>
-        </li> 
-        <li>
-            <a href="https://www.youtube.com/c/HTMLAcademyRUS">
-                <span class="visually-hidden">Ютюб</span>
-            </a>
-        </li>
-    </ul>
-</div>
-        <a href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a href="https://htmlacademy.ru/">
-            <img src="" alt="Лого разработчика">
-        </a>
+    <div class="container">
+      <ul class="social-list">
+          <li class="social-list-item">
+              <a href="https://twitter.com/htmlacademy_ru">
+                  <span class="visually-hidden">Твиттер</span>
+              </a>
+          </li> 
+          <li class="social-list-item">
+              <a href="https://www.facebook.com/htmlacademy">
+                  <span class="visually-hidden">Фейсбук</span>
+              </a>
+          </li> 
+          <li class="social-list-item">
+              <a href="https://www.youtube.com/c/HTMLAcademyRUS">
+                  <span class="visually-hidden">Ютюб</span>
+              </a>
+          </li>
+      </ul>
+          <a class="telephone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="developers-logo"  href="https://htmlacademy.ru/">
+              <img src="" alt="Лого разработчика">
+          </a>
+    </div>
 </footer>
 </body>
 </html>

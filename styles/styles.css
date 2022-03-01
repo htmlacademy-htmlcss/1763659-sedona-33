@@ -41,14 +41,127 @@ body {
     background-color: #FFFFFF;
 }
 
-.hero-inner {
-    background-image: url("images/catalog/catalog_background.png");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-  }
-
 .newsletter {
     background-image: url("images/index/newsletter_background.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
+    color: #FFFFFF;
+  }
+
+.town-description h2 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+.town-description p {
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+    color: #333333; 
+}
+
+.advantages {
+    text-align: center;
+    color: #333333;
+    background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-list-item h3 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.advantages-list-item p {
+    font-size: 18px;
+    line-height: 21px;    
+}
+
+.white {
+    color: #FFFFFF;
+    background: #83B3D3;
+}
+
+.eda {
+    background: #FFFFFF
+}
+
+.doroga {
+    background: rgba(131, 179, 211, 0.2);
+}
+
+.hotel-search {
+    text-align: center;
+    font-weight: bold;
+    line-height: 36px;
+}
+
+.hotel-search h2 {
+    font-size: 30px;
+    color: #000000;  
+    text-transform: uppercase;  
+}
+
+.hotel-search p {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: normal;
+    color: #333333;
+}
+
+.hotel-search button {
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color:#756257;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.newsletter {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.newsletter p {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.telephone {
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+}
+
+.hero-inner {
+    background-image: url("images/catalog/catalog_background.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #000000;
+    color: #FFFFFF;  
+  }
+
+.hero-inner h2 {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 78px;
+}
+
+.breadcrumbs-item {
+    font-size: 16px;
+    line-height: 21px;
   }
